@@ -9,6 +9,7 @@ import { decodeToken } from "react-jwt";
 const AuthGuard = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
+  const [loading,setLoading] = useState(true);
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const { state: locationState, pathname } = useLocation();
 
@@ -26,15 +27,22 @@ const AuthGuard = () => {
     }else if(!token){
       dispatch(setLoggedIn(false))
     }
+    setLoading(false)
   }, []);
 
   useEffect(() => {
+    if(!loading){
       if(isLoggedIn){
         navigate(pathname)
       }else{
         navigate('/login')
       }
-  }, [isLoggedIn]);
+    }
+  }, [isLoggedIn, loading]);
+
+  if(loading){
+    return <div>Loading...</div>
+  }
 
   if (!isLoggedIn) {
     return <Navigate to="/login" state={{ visitedLocation: locationState }} />;
