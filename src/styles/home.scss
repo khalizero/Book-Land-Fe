@@ -1,0 +1,131 @@
+@import "./variables.scss";
+
+.home {
+  background-color: $info-color;
+
+  .heroSection {
+    position: relative;
+    background-color: $primary-color;
+    border-radius: 0 0 70px 70px;
+    box-shadow: 0px 48px #ffffff;
+
+    .book-img {
+      position: relative;
+      top: 50px;
+    }
+  }
+  .aboutBooksLand {
+    min-height: 500px;
+    background-color: $secondary-color;
+    padding: 100px 30px;
+    .about-author {
+      background: $pink-light;
+      border-radius: 1rem;
+      padding: 20px;
+      margin: 42px 0 0px;
+      .about-author-right {
+        background-color: $white;
+        border-radius: inherit;
+        padding: 1rem;
+      }
+    }
+
+    .big-circle {
+      bottom: 10px;
+      right: 10px;
+      height: 3.2rem;
+      aspect-ratio: 1;
+      background-color: $primary-color;
+    }
+    .small-circle {
+      background-color: $pink-light;
+      bottom: 19px;
+      right: 80px;
+      aspect-ratio: 1;
+      width: 25px;
+    }
+  }
+
+  .newArrivals {
+    .iconButton {
+      color: $primary-color;
+      border-radius: 50px;
+      border: 1px solid;
+      &.filled {
+        background-color: $primary-color;
+        color: white !important;
+      }
+    }
+    .carousel-container {
+      margin-top: 50px;
+      border-radius: 1rem;
+      padding: 30px 50px;
+    }
+  }
+
+  .readNow {
+    .readNow-container {
+      background-color: $primary-color;
+      border-radius: 1rem;
+      padding: 80px 50px 0;
+      .heading {
+        text-align: center;
+        color: white;
+        font-size: 45px;
+        width: 80%;
+        margin: 38px auto 0;
+      }
+      .white-filled-btn {
+        margin: auto;
+        display: block;
+        margin-top: 80px;
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        font-weight: 700;
+        font-size: 18px;
+        border: 1px solid white;
+        &:hover {
+          background-color: transparent;
+          color: white;
+        }
+      }
+      .img-container {
+        img {
+          position: relative;
+          top: 70px;
+          width: 40%;
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+
+  .circle {
+    position: absolute;
+    background-color: $primary-500;
+    border-radius: 50%;
+  }
+  .big {
+    width: 30%;
+    aspect-ratio: 1;
+    left: 53%;
+    top: -200px;
+  }
+  .open-book {
+    width: 75px;
+    height: 75px;
+    left: 84px;
+    top: 35%;
+    padding: 16px 10px;
+  }
+  .vertical-book {
+    width: 100px;
+    height: 100px;
+    right: 10%;
+    top: 47%;
+    padding: 23px 9px;
+  }
+}

@@ -1,0 +1,28 @@
+@import './variables.scss';
+@import './spacings.scss';
+
+.pageLayout {
+    .footer-container{
+        background-color: $info-color;
+    }
+  .footer {
+    .title-medium {
+      margin-bottom: 20px;
+    }
+    .item {
+      color: #000000;
+      text-decoration: none;
+      margin-bottom: 7px;
+      cursor: pointer;
+      font-size: 13px;
+      &:hover {
+        color: $pink-dark;
+      }
+    }
+  }
+  .copyright {
+    text-align: end;
+    color: $text-gray;
+    padding: 2rem 0;
+  }
+}

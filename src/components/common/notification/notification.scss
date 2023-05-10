@@ -1,0 +1,25 @@
+.notification {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 20px;
+  z-index: 1000;
+  border-radius: 8px;
+  &.success {
+    background-color: #cfffa4;
+    .text {
+      color: black !important;
+    }
+  }
+  &.error{
+    background-color: rgb(216, 72, 72);
+  }
+  .text {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .icon{
+    fill: white;
+  }
+}

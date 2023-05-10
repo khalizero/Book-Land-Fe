@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.authPage{
+    padding: 30px;
+    min-height: 100vh;
+    align-items: center;
+    background-color: $secondary-color;
+    .sideImgcontainer{
+        display: flex;
+        align-items: center;
+    }
+    .formSide{
+        padding: 0 4rem;
+        .container{
+            background-color: #fafdfc5e;
+            padding: 4rem;
+        }
+    }
+    .newUser{
+        margin-left: auto;
+        display: block;
+        padding: 3px 0;
+        text-decoration: underline;
+    }
+}
+
+
+@media (max-width: 899px) {
+    .formSide{
+        padding: 0 !important;
+        .container{
+            padding: 10px;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .authPage{
+        padding: 8px !important;
+    }
+}
+
+

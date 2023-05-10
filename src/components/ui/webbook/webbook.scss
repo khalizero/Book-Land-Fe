@@ -1,0 +1,38 @@
+@import '../../../styles/variables.scss';
+.webBook{
+    background-color: $secondary-color;
+    padding: 1rem;
+    border: 1px solid $pink-dark;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .thumbnail{
+        display: block;
+        margin:auto;
+    }
+    .details{
+        .highlight{
+            background-color: $pink-light;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+        .title{
+            word-break: break-word;
+            margin-bottom: 8px;
+        }
+        .info{
+            margin-top: 8px;
+        }
+        .details-btn{
+            margin-top: 1rem;
+        }
+    }
+}

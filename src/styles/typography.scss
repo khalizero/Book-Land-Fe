@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.heading-2{
+    font-size: 50px;
+    line-height: 1.1;
+    color: $dark-color;
+}
+.heading-3{
+    font-size: 40px !important;
+    line-height: 1 !important;
+    color: $dark-color !important;
+}
+
+.heading-small{
+    font-size: 18px;
+    font-weight: 500;
+    color: $text-gray;
+    line-height: 1.8;
+}
+.heading-medium{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.title-small{
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-gray;
+    line-height: 1.8;
+}
+.title-medium{
+    font-size: 13px;
+    font-weight: 600;
+    color: #3f4848;
+    line-height: 1.8;
+}
+.caption-small-bold{
+    font-size: 12px;
+    font-weight: 700;
+    color: $dark-color;
+    line-height: 1.8;
+}
+.small-white-caption{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+}

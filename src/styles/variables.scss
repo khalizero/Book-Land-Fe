@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
+
+$app-font: "Montserrat", sans-serif;
+// Backgrounds
+$sidebar-background: #fafdfc;
+$menuItem: #cce8e8;
+$white: #ffffff;
+
+// Colors
+$primary-color: #5956e9;
+$secondary-color: #fdf0e0;
+$primary-500: #6b67fc5c;
+$info-color: #f6f8fa;
+$pink-light: #f3b7c4;
+$pink-dark: #f399bb;
+
+$dark-color: #000;
+$light-color: #fff;
+$text-gray: #3f4848;
+$disabled-gray: #a5a8a7;
+$text-light-gray: #6f7979;
+
+// borders
+$border-light: #dae4e4;
+$border-gray: #6f7979;
+
+// Buttons
+$primary-button: #1ebec1;
+$primary-button-hover: rgba(30, 190, 193, 0.9);
+
+// Statuses
+$warning: #7a5900;
+$disabled: rgba(63, 73, 73, 0.12);
+
+// Spacings
+$page-padding: 20px 32px;
+
+// Radiuses
+$radius-1 : 70px

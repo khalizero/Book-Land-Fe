@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+.booksPage {
+  background-color: $primary-color;
+  min-height: calc(100vh - 340px);
+  padding: 5rem;
+  .searchBar {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    .searchBtn {
+      height: 100%;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    margin-bottom: 50px;
+  }
+  .booksArea {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+
+    .MuiPagination-root {
+      width: fit-content;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .booksPage {
+    padding: 50px 30px;
+  }
+}

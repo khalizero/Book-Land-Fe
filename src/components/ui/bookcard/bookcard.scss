@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.book-card{
+    background-color: $secondary-color;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 8px;
+
+    .centerCircle{
+        background-color: $pink-light ;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        display: flex;
+        place-items: center;
+        padding: 24px;
+        width: 60%;
+        margin: 15px auto;
+    }
+    .body{
+        background-color: white;
+
+        border-radius: inherit;
+        padding: 35px 20px 14px;
+    }
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        h3{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        span{
+            color: $pink-dark;
+            font-weight: 700;
+        }
+
+    }
+    .caption{
+        font-size: 14px;
+        color: $text-gray;
+        margin-bottom: 2rem;
+    }
+    .demo-button{
+        color: $pink-dark;
+        border: 1px solid;
+        border-radius: 8px;
+        padding: 6px 16px;
+    }
+}
